@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 1280px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, header, nav, section, article, footer, div {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 5rem;
+  width: 100%;
+}
+.nav__title {
+  color: #335576;
+  margin: 0;
+}
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__list-item {
+  color: black;
+}
+.nav__list-item--selected {
+  border-bottom: 4px solid #DB7A4E;
+  box-sizing: border-box;
+}/*# sourceMappingURL=global.css.map */
