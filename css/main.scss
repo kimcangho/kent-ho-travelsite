@@ -1,1 +1,110 @@
 @use "./partials/components"; 
+@use './partials/variables' as *;
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: $tertiary-color;
+    padding: 5rem;
+
+    &__column {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $primary-color;
+        font-weight: 700;
+        margin: 2.5rem 0 1.5rem;
+    }
+
+    &__description {
+        color: $primary-color;
+        margin: 2rem 0;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: $secondary-color;
+        padding: 0.75rem 1.5rem;
+    }
+
+    &__button-text {
+        color: $quarternary-color;
+        margin: 0;
+    }
+
+    &__image {
+        width: 35%;
+    }
+}
+
+.recommendations {
+
+    padding: 5rem;
+
+    &__title {
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__destination-list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+        gap: 2rem;
+    }
+
+    &__destination-card {
+        width: 300px;
+        height: 24rem;
+        background: $primary-color;
+        padding: 1rem;
+        border-radius: $card-border-radius;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        box-sizing: border-box;
+    
+        &--hawaii {
+            background-image: url('../assets/images/hawaii.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--iceland {
+            background-image: url('../assets/images/iceland.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--greece {
+            background-image: url('../assets/images/greece.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    
+
+    &__destination-title {
+        color: $quarternary-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+}
