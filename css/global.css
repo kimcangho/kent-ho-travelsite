@@ -29,7 +29,14 @@ body, header, nav, section, article, footer, div {
   gap: 1.5rem;
   list-style-type: none;
   padding: 0;
-  align-items: center;
+  margin: 0.25rem 0 0;
+  align-items: stretch;
+}
+.nav__item-box {
+  padding: 1rem 0;
+}
+.nav__item-box--selected {
+  border-bottom: 4px solid #DB7A4E;
 }
 .nav__link {
   text-decoration: none;
@@ -39,5 +46,47 @@ body, header, nav, section, article, footer, div {
 }
 .nav__list-item--selected {
   border-bottom: 4px solid #DB7A4E;
-  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem 4rem;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__title {
+  color: #335576;
+  margin-bottom: 2rem;
+}
+.footer__list {
+  display: flex;
+  margin-top: 0;
+  list-style-type: none;
+  padding: 0;
+  gap: 5rem;
+  margin-bottom: 0;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  margin: 0;
+  font-size: 0.625rem;
+}
+.footer__text {
+  color: #335576;
+  margin-bottom: 0;
+}
+.footer__icon-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.footer__icon {
+  height: 1.5rem;
 }/*# sourceMappingURL=global.css.map */

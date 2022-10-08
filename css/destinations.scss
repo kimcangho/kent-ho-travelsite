@@ -1,0 +1,62 @@
+@use "./partials/components";
+@use "./partials/variables" as *;
+
+.itinerary {
+
+    padding: 2rem 5rem 4rem;
+
+    &--greece {
+        background-image: url("../assets/images/greece.jpg");
+        background-size: cover;
+        background-position: left;
+    }
+    &--hawaii {
+        background-image: url("../assets/images/hawaii.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    &--iceland {
+        background-image: url("../assets/images/iceland.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $quarternary-color;
+    }
+
+    &__card-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__card {
+        width: 25%;
+        background: $quarternary-color;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem 2rem;
+        border-radius: $card-border-radius;
+    }
+
+    &__day {
+        padding: 0;
+        border-bottom: 4px solid black;
+    }
+
+    &__activities-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__activities-list-item {
+        background-color: $tertiary-color;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

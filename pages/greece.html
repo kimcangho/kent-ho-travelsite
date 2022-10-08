@@ -11,23 +11,114 @@
 <body>
     <header>
         <nav class="nav">
-            <h2 class="nav__title">Ready Jet Go</h2>
-            <ul class="nav__list">
+          <h2 class="nav__title">Travel Site</h2>
+          <ul class="nav__list">
+            <div class="nav__item-box">
               <a href="../index.html" class="nav__link"
                 ><li class="nav__list-item">Home</li></a
               >
-  
+            </div>
+            <div class="nav__item-box">
               <a href="./hawaii.html" class="nav__link"
                 ><li class="nav__list-item">Hawaii</li></a
               >
+            </div>
+            <div class="nav__item-box">
               <a href="./iceland.html" class="nav__link"
                 ><li class="nav__list-item">Iceland</li></a
               >
+            </div>
+            <div class="nav__item-box nav__item-box--selected">
               <a href="./greece.html" class="nav__link"
-                ><li class="nav__list-item nav__list-item--selected">Greece</li></a
+                ><li class="nav__list-item">Greece</li></a
               >
-            </ul>
+            </div>
+          </ul>
         </nav>
       </header>
+
+      <main class="itinerary itinerary--greece">
+        <h1 class="itinerary__title">Greece</h1>
+        <section class="itinerary__card-list">
+            <article class="itinerary__card">
+                <h4 class="itinerary__day">Friday</h4>
+                <ul class="itinerary__activities-list">
+                    <li class="itinerary__activities-list-item">Breakfast</li>
+                    <li class="itinerary__activities-list-item">Lunch</li>
+                    <li class="itinerary__activities-list-item">Dinner</li>
+                    <li class="itinerary__activities-list-item">Dancing</li>
+                </ul>
+            </article>
+            <article class="itinerary__card">
+                <h4 class="itinerary__day">Saturday</h4>
+                <ul class="itinerary__activities-list">
+                    <li class="itinerary__activities-list-item">Breakfast</li>
+                    <li class="itinerary__activities-list-item">Lunch</li>
+                    <li class="itinerary__activities-list-item">Dinner</li>
+                    <li class="itinerary__activities-list-item">Dancing</li>
+                </ul>
+            </article>
+            <article class="itinerary__card">
+                <h4 class="itinerary__day">Sunday</h4>
+                <ul class="itinerary__activities-list">
+                    <li class="itinerary__activities-list-item">Breakfast</li>
+                    <li class="itinerary__activities-list-item">Lunch</li>
+                    <li class="itinerary__activities-list-item">Dinner</li>
+                    <li class="itinerary__activities-list-item">Dancing</li>
+                </ul>
+            </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__column">
+          <h2 class="footer__title">Contact</h2>
+          <h5 class="footer__subtitle">EMAIL</h5>
+          <p class="footer__text">info@travelsite.com</p>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__title">Hours</h2>
+          <ul class="footer__list">
+            <li>
+              <h5 class="footer__subtitle">MONDAY - FRIDAY</h5>
+              <p class="footer__text">9:00AM - 5:00PM</p>
+            </li>
+            <li>
+              <h5 class="footer__subtitle">SATURDAY</h5>
+              <p class="footer__text">10:00AM - 4:00PM</p>
+            </li>
+            <li>
+              <h5 class="footer__subtitle">SUNDAY</h5>
+              <p class="footer__text">Closed</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__title">Social</h2>
+          <ul class="footer__icon-list">
+            <a href="https://www.instagram.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-instagram.png"
+                alt="instagram icon"
+                class="footer__icon"
+              />
+            </a>
+            <a href="https://www.facebook.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-facebook.png"
+                alt="facebook icon"
+                class="footer__icon"
+              />
+            </a>
+            <a href="https://www.twitter.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-twitter.png"
+                alt="twitter icon"
+                class="footer__icon"
+              />
+            </a>
+          </ul>
+        </div>
+      </footer>
 </body>
 </html>
