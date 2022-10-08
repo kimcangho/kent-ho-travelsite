@@ -22,7 +22,8 @@ body, header, nav, section, article, footer, div {
     align-items: center;
     background-color: $quarternary-color;
     padding: 0 5rem;
-    width: 100%;
+    position: fixed;
+    width: 80rem;
   
     &__title {
       color: $primary-color;
