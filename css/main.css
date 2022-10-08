@@ -34,15 +34,15 @@
   width: 35%;
 }
 
-.recommendations {
+.recs {
   padding: 5rem;
 }
-.recommendations__title {
+.recs__title {
   color: #335576;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.recommendations__destination-list {
+.recs__destination-list {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -50,7 +50,7 @@
   padding: 5rem;
   gap: 2rem;
 }
-.recommendations__destination-card {
+.recs__destination-card {
   width: 300px;
   height: 24rem;
   background: #335576;
@@ -61,26 +61,26 @@
   align-items: flex-end;
   box-sizing: border-box;
 }
-.recommendations__destination-card--hawaii {
+.recs__destination-card--hawaii {
   background-image: url("../assets/images/hawaii.jpg");
   background-size: cover;
   background-position: center;
 }
-.recommendations__destination-card--iceland {
+.recs__destination-card--iceland {
   background-image: url("../assets/images/iceland.jpg");
   background-size: cover;
   background-position: center;
 }
-.recommendations__destination-card--greece {
+.recs__destination-card--greece {
   background-image: url("../assets/images/greece.jpg");
   background-size: cover;
   background-position: center;
 }
-.recommendations__link {
+.recs__link {
   text-decoration: none;
   display: inline-block;
 }
-.recommendations__destination-title {
+.recs__destination-title {
   color: #FFFFFF;
   font-size: 1.5rem;
   font-weight: 700;
