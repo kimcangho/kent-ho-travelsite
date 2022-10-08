@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     background-color: $tertiary-color;
-    padding: 5rem;
+    padding: 8rem 5rem 5rem;
 
     &__column {
         width: 50%;
@@ -33,11 +33,13 @@
         background-color: $secondary-color;
         padding: 0.75rem 1.5rem;
         border-radius: 999px;
+        width: 28%;
     }
 
     &__button-text {
         color: $quarternary-color;
         margin: 0;
+        text-align: center;
     }
 
     &__image {
@@ -47,7 +49,7 @@
 
 .recs {
 
-    padding: 5rem;
+    padding: 2rem 5rem 0;
 
     &__title {
         color: $primary-color;
@@ -60,8 +62,8 @@
         padding: 0;
         display: flex;
         justify-content: center;
-        padding: 5rem;
-        gap: 2rem;
+        padding: 0 5rem 4rem;
+        gap: 2.5rem;
     }
 
     &__destination-card {

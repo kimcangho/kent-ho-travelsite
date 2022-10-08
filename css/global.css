@@ -53,7 +53,7 @@ body, header, nav, section, article, footer, div {
   background-color: #FEFAF5;
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem 4rem;
+  padding: 2rem 10rem 4rem;
 }
 .footer__column {
   display: flex;

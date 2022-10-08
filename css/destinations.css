@@ -1,5 +1,6 @@
 .itinerary {
-  padding: 2rem 5rem 4rem;
+  height: 50rem;
+  padding: 3rem 5rem 4rem;
 }
 .itinerary--greece {
   background-image: url("../assets/images/greece.jpg");
@@ -25,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .itinerary__card {
   width: 25%;
@@ -39,6 +40,7 @@
 .itinerary__day {
   padding: 0;
   border-bottom: 4px solid black;
+  margin: 1rem 0 0;
 }
 .itinerary__activities-list {
   list-style-type: none;

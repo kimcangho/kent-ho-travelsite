@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #FEFAF5;
-  padding: 5rem;
+  padding: 8rem 5rem 5rem;
 }
 .hero__column {
   width: 50%;
@@ -25,17 +25,19 @@
   background-color: #DB7A4E;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
+  width: 28%;
 }
 .hero__button-text {
   color: #FFFFFF;
   margin: 0;
+  text-align: center;
 }
 .hero__image {
   width: 35%;
 }
 
 .recs {
-  padding: 5rem;
+  padding: 2rem 5rem 0;
 }
 .recs__title {
   color: #335576;
@@ -47,8 +49,8 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  padding: 5rem;
-  gap: 2rem;
+  padding: 0 5rem 4rem;
+  gap: 2.5rem;
 }
 .recs__destination-card {
   width: 300px;

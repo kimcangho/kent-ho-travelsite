@@ -2,8 +2,8 @@
 @use "./partials/variables" as *;
 
 .itinerary {
-
-    padding: 2rem 5rem 4rem;
+    height: 50rem;
+    padding: 3rem 5rem 4rem;
 
     &--greece {
         background-image: url("../assets/images/greece.jpg");
@@ -31,7 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
     &__card {
@@ -47,6 +47,7 @@
     &__day {
         padding: 0;
         border-bottom: 4px solid black;
+        margin: 1rem 0 0;
     }
 
     &__activities-list {
