@@ -7,7 +7,13 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body, header, nav, section, article, footer, div {
+body,
+header,
+nav,
+section,
+article,
+footer,
+div {
   margin: 0;
   padding: 0;
 }
@@ -39,14 +45,14 @@ body, header, nav, section, article, footer, div {
 .nav__item-box--selected {
   border-bottom: 4px solid #DB7A4E;
 }
+.nav__item-box:hover {
+  border-bottom: 4px solid #335576;
+}
 .nav__link {
   text-decoration: none;
 }
 .nav__list-item {
-  color: black;
-}
-.nav__list-item--selected {
-  border-bottom: 4px solid #DB7A4E;
+  color: #335576;
 }
 
 .footer {

@@ -1,5 +1,6 @@
 @use "./partials/components"; 
 @use './partials/variables' as *;
+@use './partials/animations' as *;
 
 
 .hero {
@@ -95,6 +96,11 @@
             background-position: center;
         }
 
+        &:hover {
+            border: 4px solid $secondary-color;
+            animation: expanding-card 0.3s;
+            animation-fill-mode: forwards;
+        }
     }
 
     &__link {
@@ -102,12 +108,11 @@
         display: inline-block;
     }
 
-    
-
     &__destination-title {
         color: $quarternary-color;
         font-size: 1.5rem;
         font-weight: 700;
+
     }
 
 }

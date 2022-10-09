@@ -1,3 +1,23 @@
+@-webkit-keyframes sliding-underline {}
+@keyframes sliding-underline {}
+@-webkit-keyframes expanding-card {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    border-bottom: 4px solid #DB7A4E;
+  }
+}
+@keyframes expanding-card {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    border-bottom: 4px solid #DB7A4E;
+  }
+}
 .hero {
   display: flex;
   justify-content: space-between;
@@ -77,6 +97,13 @@
   background-image: url("../assets/images/greece.jpg");
   background-size: cover;
   background-position: center;
+}
+.recs__destination-card:hover {
+  border: 4px solid #DB7A4E;
+  -webkit-animation: expanding-card 0.3s;
+          animation: expanding-card 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .recs__link {
   text-decoration: none;
