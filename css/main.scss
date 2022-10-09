@@ -35,6 +35,12 @@
         padding: 0.75rem 1.5rem;
         border-radius: 999px;
         width: 28%;
+        &:hover {
+            background-color: $primary-color;
+            transform: scale(1.1);
+            transition: 0.2s;
+            font-weight: 700;
+          }
     }
 
     &__button-text {

@@ -47,6 +47,7 @@ div {
 }
 .nav__item-box:hover {
   border-bottom: 4px solid #335576;
+  transition: 0.2s;
 }
 .nav__link {
   text-decoration: none;

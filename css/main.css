@@ -6,7 +6,6 @@
   }
   to {
     transform: scale(1.1);
-    border-bottom: 4px solid #DB7A4E;
   }
 }
 @keyframes expanding-card {
@@ -15,7 +14,6 @@
   }
   to {
     transform: scale(1.1);
-    border-bottom: 4px solid #DB7A4E;
   }
 }
 .hero {
@@ -46,6 +44,12 @@
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   width: 28%;
+}
+.hero__button:hover {
+  background-color: #335576;
+  transform: scale(1.1);
+  transition: 0.2s;
+  font-weight: 700;
 }
 .hero__button-text {
   color: #FFFFFF;

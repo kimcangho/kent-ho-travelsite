@@ -20,6 +20,7 @@ div {
   padding: 0;
 }
 
+
 // Nav Block
 
 .nav {
@@ -52,8 +53,9 @@ div {
     }
     &:hover {
       border-bottom: 4px solid $primary-color;
+      transition: 0.2s;
     }
-    
+
   }
 
   &__link {
