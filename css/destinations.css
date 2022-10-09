@@ -40,7 +40,8 @@
 .itinerary__day {
   padding: 0;
   border-bottom: 4px solid black;
-  margin: 1rem 0 0;
+  margin: 1rem 0;
+  padding: 0 0 0.25rem;
 }
 .itinerary__activities-list {
   list-style-type: none;
