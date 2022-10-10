@@ -20,25 +20,23 @@
     margin: 0.25rem 0 0;
   }
 
-  &__item-box {
+  &__list-item {
+    display: inline-block;
     border-bottom: 0.25rem solid $quarternary-color;
     padding: 1rem 0;
+
+    &--selected {
+      border-bottom: 0.25rem solid $secondary-color;
+    }
 
     &:hover {
       border-bottom: 0.25rem solid $primary-color;
       transition: 0.2s;
     }
-
-    &--selected {
-      border-bottom: 0.25rem solid $secondary-color;
-    }
   }
 
   &__link {
-    @include null-link;
-  }
-
-  &__list-item {
     @include font-setup($primary-color, $text-size, $regular-weight);
+    @include null-link;
   }
 }

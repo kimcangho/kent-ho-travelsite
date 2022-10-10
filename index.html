@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ready Jet Go</title>
-    <link rel="stylesheet" href="./scss/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
+
     <header>
       <nav class="nav">
         <h2 class="nav__title">Ready Jet Go</h2>
         <ul class="nav__list">
-          <div class="nav__item-box nav__item-box--selected">
-            <a href="./index.html" class="nav__link"
-              ><li class="nav__list-item">Home</li></a
-            >
-          </div>
-          <div class="nav__item-box">
-            <a href="./pages/hawaii.html" class="nav__link"
-              ><li class="nav__list-item">Hawaii</li></a
-            >
-          </div>
-          <div class="nav__item-box">
-            <a href="./pages/iceland.html" class="nav__link"
-              ><li class="nav__list-item">Iceland</li></a
-            >
-          </div>
-          <div class="nav__item-box">
-            <a href="./pages/greece.html" class="nav__link"
-              ><li class="nav__list-item">Greece</li></a
-            >
-          </div>
+          <li class="nav__list-item nav__list-item--selected">
+              <a href="./index.html" class="nav__link">
+                Home
+              </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./pages/hawaii.html" class="nav__link">
+              Hawaii
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./pages/iceland.html" class="nav__link">
+              Iceland
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./pages/greece.html" class="nav__link">
+              Greece
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -60,27 +61,34 @@
           src="./assets/images/hero.png"
           alt="Around the World"
           class="hero__image"
-        />
+        >
       </section>
 
       <section class="recs">
         <h3 class="recs__title">Recommendations</h3>
         <ul class="recs__destination-list">
-          <a href="./pages/hawaii.html" class="recs__link">
-            <div class="recs__destination-card recs__destination-card--hawaii">
-              <li class="recs__destination-title">Hawaii</li>
-            </div>
-          </a>
-          <a href="./pages/iceland.html" class="recs__link">
-            <div class="recs__destination-card recs__destination-card--iceland">
-              <li class="recs__destination-title">Iceland</li>
-            </div>
-          </a>
-          <a href="./pages/greece.html" class="recs__link">
-            <div class="recs__destination-card recs__destination-card--greece">
-              <li class="recs__destination-title">Greece</li>
-            </div>
-          </a>
+          <li>
+            <a href="./pages/hawaii.html" class="recs__link">
+              <div class="recs__destination-card recs__destination-card--hawaii">
+                Hawaii
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/iceland.html" class="recs__link">
+              <div class="recs__destination-card recs__destination-card--iceland">
+                Iceland
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./pages/greece.html" class="recs__link">
+              <div class="recs__destination-card recs__destination-card--greece">
+                Greece
+              </div>
+            </a>
+          </li>
+
         </ul>
       </section>
     </main>
@@ -111,29 +119,36 @@
       <div class="footer__column">
         <h2 class="footer__title">Social</h2>
         <ul class="footer__icon-list">
-          <a href="https://www.instagram.com" class="footer__icon-link">
-            <img
-              src="./assets/images/icon-instagram.png"
-              alt="instagram icon"
-              class="footer__icon"
-            />
-          </a>
-          <a href="https://www.facebook.com" class="footer__icon-link">
-            <img
-              src="./assets/images/icon-facebook.png"
-              alt="facebook icon"
-              class="footer__icon"
-            />
-          </a>
-          <a href="https://www.twitter.com" class="footer__icon-link">
-            <img
-              src="./assets/images/icon-twitter.png"
-              alt="twitter icon"
-              class="footer__icon"
-            />
-          </a>
+          <li>
+            <a href="https://www.instagram.com" class="footer__icon-link">
+              <img
+                src="./assets/images/icon-instagram.png"
+                alt="instagram icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="footer__icon-link">
+              <img
+                src="./assets/images/icon-facebook.png"
+                alt="facebook icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="footer__icon-link">
+              <img
+                src="./assets/images/icon-twitter.png"
+                alt="twitter icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
+
   </body>
 </html>

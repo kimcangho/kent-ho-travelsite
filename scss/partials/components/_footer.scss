@@ -29,8 +29,9 @@
   }
 
   &__icon-list {
-    @include margin-padding-reset;
     @include flexbox(row, flex-start, flex-end);
+    @include margin-padding-reset;
+    @include null-list;
     gap: 2rem;
   }
 

@@ -45,9 +45,6 @@
 
     &__link {
         @include null-link;
-    }
-
-    &__destination-title {
         @include font-setup($quarternary-color, $subheading-size, 700);
     }
 }

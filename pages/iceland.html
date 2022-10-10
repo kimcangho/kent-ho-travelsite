@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iceland - Ready Jet Go</title>
-    <link rel="stylesheet" href="../scss/destinations.css" />
+    <link rel="stylesheet" href="../scss/destinations.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
+
     <header>
       <nav class="nav">
         <h2 class="nav__title">Ready Jet Go</h2>
         <ul class="nav__list">
-          <div class="nav__item-box">
-            <a href="../index.html" class="nav__link"
-              ><li class="nav__list-item">Home</li></a
-            >
-          </div>
-          <div class="nav__item-box">
-            <a href="./hawaii.html" class="nav__link"
-              ><li class="nav__list-item">Hawaii</li></a
-            >
-          </div>
-          <div class="nav__item-box nav__item-box--selected">
-            <a href="./iceland.html" class="nav__link"
-              ><li class="nav__list-item">Iceland</li></a
-            >
-          </div>
-          <div class="nav__item-box">
-            <a href="./greece.html" class="nav__link"
-              ><li class="nav__list-item">Greece</li></a
-            >
-          </div>
+          <li class="nav__list-item">
+            <a href="../index.html" class="nav__link">
+              Home
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./hawaii.html" class="nav__link">
+              Hawaii
+            </a>
+          </li>
+          <li class="nav__list-item nav__list-item--selected">
+            <a href="./iceland.html" class="nav__link">
+              Iceland
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="./greece.html" class="nav__link">
+              Greece
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main class="itinerary itinerary--iceland">
-      <h1 class="itinerary__title">Iceland</h1>
-      <section class="itinerary__card-list">
-        <article class="itinerary__card">
-          <h4 class="itinerary__day">Friday - Reykjavik</h4>
-          <ul class="itinerary__activities-list">
-            <li class="itinerary__activities-list-item">Hallgrimskirkja</li>
-            <li class="itinerary__activities-list-item">Hið Íslenzka Reðasafn</li>
-            <li class="itinerary__activities-list-item">Perlan Exploratorium</li>
-            <li class="itinerary__activities-list-item">Old Iceland Resto</li>
-          </ul>
-        </article>
-        <article class="itinerary__card">
-          <h4 class="itinerary__day">Saturday - Golden Circle</h4>
-          <ul class="itinerary__activities-list">
-            <li class="itinerary__activities-list-item">
-              Þingvellir National Park
-            </li>
-            <li class="itinerary__activities-list-item">Laugarvatn Fontana</li>
-            <li class="itinerary__activities-list-item">
-              Strokkur and Gulfoss
-            </li>
-            <li class="itinerary__activities-list-item">Reykjadalur River</li>
-          </ul>
-        </article>
-        <article class="itinerary__card">
-          <h4 class="itinerary__day">Sunday - Reykjavik</h4>
-          <ul class="itinerary__activities-list">
-            <li class="itinerary__activities-list-item">Old Harbour Festival</li>
-            <li class="itinerary__activities-list-item">Shopping</li>
-            <li class="itinerary__activities-list-item">Grindavik</li>
-            <li class="itinerary__activities-list-item">Blue Lagoon</li>
-          </ul>
-        </article>
+    <main>
+      <section class="itinerary itinerary--iceland">
+        <h1 class="itinerary__title">Iceland</h1>
+        <div class="itinerary__card-list">
+          <article class="itinerary__card">
+            <h4 class="itinerary__day">Friday - Reykjavik</h4>
+            <ul class="itinerary__activities-list">
+              <li class="itinerary__activities-list-item">Hallgrimskirkja</li>
+              <li class="itinerary__activities-list-item">
+                Hið Íslenzka Reðasafn
+              </li>
+              <li class="itinerary__activities-list-item">
+                Perlan Exploratorium
+              </li>
+              <li class="itinerary__activities-list-item">Old Iceland Resto</li>
+            </ul>
+          </article>
+          <article class="itinerary__card">
+            <h4 class="itinerary__day">Saturday - Golden Circle</h4>
+            <ul class="itinerary__activities-list">
+              <li class="itinerary__activities-list-item">
+                Þingvellir National Park
+              </li>
+              <li class="itinerary__activities-list-item">
+                Laugarvatn Fontana
+              </li>
+              <li class="itinerary__activities-list-item">
+                Strokkur and Gulfoss
+              </li>
+              <li class="itinerary__activities-list-item">Reykjadalur River</li>
+            </ul>
+          </article>
+          <article class="itinerary__card">
+            <h4 class="itinerary__day">Sunday - Reykjavik</h4>
+            <ul class="itinerary__activities-list">
+              <li class="itinerary__activities-list-item">
+                Old Harbour Festival
+              </li>
+              <li class="itinerary__activities-list-item">Shopping</li>
+              <li class="itinerary__activities-list-item">Grindavik</li>
+              <li class="itinerary__activities-list-item">Blue Lagoon</li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -103,29 +114,36 @@
       <div class="footer__column">
         <h2 class="footer__title">Social</h2>
         <ul class="footer__icon-list">
-          <a href="https://www.instagram.com" class="footer__icon-link">
-            <img
-              src="../assets/images/icon-instagram.png"
-              alt="instagram icon"
-              class="footer__icon"
-            />
-          </a>
-          <a href="https://www.facebook.com" class="footer__icon-link">
-            <img
-              src="../assets/images/icon-facebook.png"
-              alt="facebook icon"
-              class="footer__icon"
-            />
-          </a>
-          <a href="https://www.twitter.com" class="footer__icon-link">
-            <img
-              src="../assets/images/icon-twitter.png"
-              alt="twitter icon"
-              class="footer__icon"
-            />
-          </a>
+          <li>
+            <a href="https://www.instagram.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-instagram.png"
+                alt="instagram icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-facebook.png"
+                alt="facebook icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="footer__icon-link">
+              <img
+                src="../assets/images/icon-twitter.png"
+                alt="twitter icon"
+                class="footer__icon"
+              >
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
+
   </body>
 </html>
