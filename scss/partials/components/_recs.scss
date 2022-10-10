@@ -1,0 +1,53 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../animations' as *;
+
+.recs {
+    padding: 2rem 5rem 0;
+
+    &__title {
+        @include font-setup($primary-color, $subheading-size, $bold-weight);
+    }
+
+    &__destination-list {
+        @include flexbox(row, center, center);
+        @include null-list;
+        gap: $card-list-gap;
+        padding: 0 5rem 4rem;
+    }
+
+    &__destination-card {
+        @include flexbox(row, flex-end, flex-end);
+        background: $primary-color;
+        border-radius: $card-border-radius;
+        box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,.2);
+        height: 24rem;
+        padding: 1rem;
+        width: $card-width;
+ 
+        &--hawaii {
+            @include background-image(hawaii);
+        }
+
+        &--iceland {
+            @include background-image(iceland);
+        }
+
+        &--greece {
+            @include background-image(greece);
+        }
+
+        &:hover {
+            animation: expanding-card 0.3s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &__link {
+        @include null-link;
+    }
+
+    &__destination-title {
+        @include font-setup($quarternary-color, $subheading-size, 700);
+    }
+}

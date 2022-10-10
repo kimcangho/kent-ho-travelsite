@@ -1,0 +1,174 @@
+.nav {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  position: fixed;
+  width: 80rem;
+}
+.nav__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin: 0.25rem 0 0;
+}
+.nav__item-box {
+  border-bottom: 0.25rem solid #FFFFFF;
+  padding: 1rem 0;
+}
+.nav__item-box:hover {
+  border-bottom: 0.25rem solid #335576;
+  transition: 0.2s;
+}
+.nav__item-box--selected {
+  border-bottom: 0.25rem solid #DB7A4E;
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__list-item {
+  color: #335576;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #FEFAF5;
+  padding: 2rem 10rem 4rem;
+}
+.footer__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.25rem 0 2rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style-type: none;
+  padding: 0;
+  gap: 5rem;
+  margin: 0;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-size: 0.625rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer__text {
+  color: #335576;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0 0;
+}
+.footer__icon-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.footer__icon {
+  height: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, "Open Sans", sans-serif;
+}
+
+body {
+  width: 80rem;
+}
+
+body,
+header,
+nav,
+section,
+article,
+footer,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.itinerary {
+  height: 50rem;
+  padding: 3rem 5rem 4rem;
+}
+.itinerary--hawaii {
+  background-image: url("../assets/images/hawaii.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.itinerary--iceland {
+  background-image: url("../assets/images/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.itinerary--greece {
+  background-image: url("../assets/images/greece.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.itinerary__title {
+  color: #FFFFFF;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.itinerary__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.itinerary__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #FFFFFF;
+  border-radius: 0.313rem;
+  padding: 0 1rem 2rem;
+  width: 18.75rem;
+  text-align: center;
+}
+.itinerary__day {
+  border-bottom: 0.25rem solid black;
+  margin: 1rem 0;
+  padding: 0 0 0.25rem;
+}
+.itinerary__activities-list {
+  list-style-type: none;
+  padding: 0;
+}
+.itinerary__activities-list-item {
+  background-color: #FEFAF5;
+  margin: 1rem;
+  padding: 1rem;
+}/*# sourceMappingURL=destinations.css.map */

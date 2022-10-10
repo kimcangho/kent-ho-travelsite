@@ -1,15 +1,12 @@
 @use './variables' as *;
 
-@keyframes sliding-underline {
-
-}
-
 @keyframes expanding-card {
     from {
+        border: none;
         transform: scale(1);
     }
     to {
+        border: 0.25rem solid $secondary-color;
         transform: scale(1.1);
     }
 }
-

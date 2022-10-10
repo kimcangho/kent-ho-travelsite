@@ -1,0 +1,247 @@
+.nav {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  position: fixed;
+  width: 80rem;
+}
+.nav__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin: 0.25rem 0 0;
+}
+.nav__item-box {
+  border-bottom: 0.25rem solid #FFFFFF;
+  padding: 1rem 0;
+}
+.nav__item-box:hover {
+  border-bottom: 0.25rem solid #335576;
+  transition: 0.2s;
+}
+.nav__item-box--selected {
+  border-bottom: 0.25rem solid #DB7A4E;
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__list-item {
+  color: #335576;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #FEFAF5;
+  padding: 2rem 10rem 4rem;
+}
+.footer__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.25rem 0 2rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style-type: none;
+  padding: 0;
+  gap: 5rem;
+  margin: 0;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-size: 0.625rem;
+  font-weight: 400;
+  margin: 0;
+}
+.footer__text {
+  color: #335576;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0 0;
+}
+.footer__icon-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.footer__icon {
+  height: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, "Open Sans", sans-serif;
+}
+
+body {
+  width: 80rem;
+}
+
+body,
+header,
+nav,
+section,
+article,
+footer,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #FEFAF5;
+  padding: 8rem 5rem 5rem;
+}
+.hero__column {
+  width: 50%;
+}
+.hero__title {
+  color: #335576;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem;
+}
+.hero__description {
+  color: #335576;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.hero__link {
+  text-decoration: none;
+}
+.hero__button {
+  background-color: #DB7A4E;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  width: 28%;
+}
+.hero__button:hover {
+  background-color: #335576;
+  transform: scale(1.1);
+  transition: 0.2s;
+  font-weight: 700;
+}
+.hero__button-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+.hero__image {
+  width: 35%;
+}
+
+@-webkit-keyframes expanding-card {
+  from {
+    border: none;
+    transform: scale(1);
+  }
+  to {
+    border: 0.25rem solid #DB7A4E;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes expanding-card {
+  from {
+    border: none;
+    transform: scale(1);
+  }
+  to {
+    border: 0.25rem solid #DB7A4E;
+    transform: scale(1.1);
+  }
+}
+.recs {
+  padding: 2rem 5rem 0;
+}
+.recs__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.recs__destination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 2.5rem;
+  padding: 0 5rem 4rem;
+}
+.recs__destination-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: #335576;
+  border-radius: 0.313rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  height: 24rem;
+  padding: 1rem;
+  width: 18.75rem;
+}
+.recs__destination-card--hawaii {
+  background-image: url("../assets/images/hawaii.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.recs__destination-card--iceland {
+  background-image: url("../assets/images/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.recs__destination-card--greece {
+  background-image: url("../assets/images/greece.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.recs__destination-card:hover {
+  -webkit-animation: expanding-card 0.3s;
+          animation: expanding-card 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.recs__link {
+  text-decoration: none;
+}
+.recs__destination-title {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

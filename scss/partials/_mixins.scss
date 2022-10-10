@@ -1,0 +1,34 @@
+@use "./variables" as *;
+
+@mixin background-image($location) {
+  background-image: url("../assets/images/#{$location}.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin flexbox($flex-direction, $horizontal-align, $vertical-align) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $horizontal-align;
+  align-items: $vertical-align;
+}
+
+@mixin font-setup($color, $font-size, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin margin-padding-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin null-link {
+  text-decoration: none;
+}
+
+@mixin null-list {
+  list-style-type: none;
+  padding: 0;
+}

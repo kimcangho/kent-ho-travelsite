@@ -1,0 +1,27 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@use './components/nav.scss';
+@use './components/footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $default-fonts;
+}
+
+body {
+  width: $page-width;
+}
+
+body,
+header,
+nav,
+section,
+article,
+footer,
+div {
+  @include margin-padding-reset;
+}

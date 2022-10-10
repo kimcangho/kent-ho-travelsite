@@ -1,0 +1,50 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.hero {
+    @include flexbox(row, space-between, stretch);
+    background-color: $tertiary-color;
+    padding: 8rem 5rem 5rem;
+
+    &__column {
+        width: 50%;
+    }
+
+    &__title {
+        @include font-setup($primary-color, $secondary-heading-size, $bold-weight);
+        margin: 2.5rem 0 1.5rem;
+    }
+
+    &__description {
+        @include font-setup($primary-color, $text-size, $regular-weight);
+        margin: 2rem 0;
+    }
+
+    &__link {
+        @include null-link;
+    }
+
+    &__button {
+        background-color: $secondary-color;
+        border-radius: 999px;
+        padding: 0.75rem 1.5rem;
+        width: 28%;
+
+        &:hover {
+            background-color: $primary-color;
+            transform: scale(1.1);
+            transition: 0.2s;
+            font-weight: 700;
+          }
+    }
+
+    &__button-text {
+        @include font-setup($quarternary-color, $text-size, $regular-weight);
+        margin: 0;
+        text-align: center;
+    }
+
+    &__image {
+        width: $image-width;
+    }
+}

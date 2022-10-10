@@ -1,0 +1,53 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.itinerary {
+  height: 50rem;
+  padding: 3rem 5rem 4rem;
+
+  &--hawaii {
+    @include background-image(hawaii);
+  }
+
+  &--iceland {
+    @include background-image(iceland);
+  }
+
+  &--greece {
+    @include background-image(greece);
+  }
+
+  &__title {
+    @include font-setup($quarternary-color, $main-heading-size, $bold-weight);
+  }
+
+  &__card-list {
+    @include flexbox(row, center, center);
+    gap: $card-list-gap;
+  }
+
+  &__card {
+    @include flexbox(column, flex-start, stretch);
+    background: $quarternary-color;
+    border-radius: $card-border-radius;
+    padding: 0 1rem 2rem;
+    width: $card-width;
+    text-align: center;
+  }
+
+  &__day {
+    border-bottom: 0.25rem solid black;
+    margin: 1rem 0;
+    padding: 0 0 0.25rem;
+  }
+
+  &__activities-list {
+    @include null-list;
+  }
+
+  &__activities-list-item {
+    background-color: $tertiary-color;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
